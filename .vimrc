@@ -62,13 +62,13 @@ filetype plugin indent on    " required
 syntax enable
 set background=dark
 let g:solarized_termcolors=   256
-let g:solarized_termtrans =   1
-let g:solarized_degrade   =   1
-let g:solarized_bold      =   0
-let g:solarized_underline =   0
-let g:solarized_italic    =   0
-let g:solarized_contrast  =   "normal"
-let g:solarized_visibility=   "normal"
+"let g:solarized_termtrans =   1
+"let g:solarized_degrade   =   1
+"let g:solarized_bold      =   0
+"let g:solarized_underline =   0
+"let g:solarized_italic    =   0
+"let g:solarized_contrast  =   "normal"
+"let g:solarized_visibility=   "normal"
 colorscheme solarized
 "autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
@@ -79,3 +79,18 @@ let g:airline#extensions#tabline#left_sep=' '
 let g:airline#extensions#tabline#left_alt_sep='|'
 let g:airline#extensions#tabline#formatter='default'
 let g:airline_statusline_ontop=1
+"Use this variable to change symbols.
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
+set splitbelow
+set splitright
