@@ -34,7 +34,6 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'edkolev/tmuxline.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 " git repos on your local machine (i.e. when working on your own plugin)
 "Plugin 'file:///home/gmarik/path/to/plugin'
@@ -62,13 +61,13 @@ filetype plugin indent on    " required
 syntax enable
 set background=dark
 let g:solarized_termcolors=   256
-"let g:solarized_termtrans =   1
-"let g:solarized_degrade   =   1
-"let g:solarized_bold      =   0
-"let g:solarized_underline =   0
-"let g:solarized_italic    =   0
-"let g:solarized_contrast  =   "normal"
-"let g:solarized_visibility=   "normal"
+let g:solarized_termtrans =   1
+let g:solarized_degrade   =   1
+let g:solarized_bold      =   0
+let g:solarized_underline =   0
+let g:solarized_italic    =   1
+"let g:solarized_contrast  =   "low"
+"let g:solarized_visibility=   "low"
 colorscheme solarized
 "autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
