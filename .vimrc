@@ -36,6 +36,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'heavenshell/vim-pydocstring'
+Plugin 'iamcco/markdown-preview.vim'
 " git repos on your local machine (i.e. when working on your own plugin)
 "Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
@@ -95,4 +97,6 @@ let g:NERDTreeIndicatorMapCustom = {
 set splitbelow
 set splitright
 let g:jedi#force_py_version='3'
+let g:pydocstring_formatter = 'sphinx'
 
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
